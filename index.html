@@ -1,12 +1,251 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>tbeheler.github.io</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffdd09;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  height: 50%;
+  overflow: scroll;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  overflow: scroll;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  overflow: scroll;
+  height: 500px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.accordion {
+  background-color: #43cfec;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
 </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div class="navbar">
+  <a href="https://mypages.valdosta.edu/thbeheler/FinalProject/HTML/index2.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://mypages.valdosta.edu/thbeheler/FinalProject/HTML/history.html">History</a>
+      <a href="https://mypages.valdosta.edu/thbeheler/FinalProject/HTML/MeettheCast.html">Meet the Cast</a>
+      <a href="https://mypages.valdosta.edu/thbeheler/FinalProject/HTML/gallery.html">Gallery</a>
+    </div>
+  </div>
+  <a href="https://mypages.valdosta.edu/thbeheler/FinalProject/HTML/ContactUs.html">Contact Us</a>
+<a href="https://mypages.valdosta.edu/thbeheler/FinalProject/HTML/FAQ.html">FAQ's</a>
+  </div>
+</div>
+<h2>Frequently Asked Questions</h2>
+
+<button class="accordion">What's your "bad weather" policy?</button>
+<div class="panel">
+  <p>We have the same policy as most live entertainment venues: The show must go on! If our performers and staff can make it to the club, then shows proceed as scheduled. (No refunds, ticket exchanges or cancellations.) On the rare occasions when we must cancel a show due to inclement weather, all ticket holders will be contacted directly to discuss their options. If you're braving bad weather to attend a show, don't forget that public transportation is a great option. The District Comedy is less than a block from the Farragut North Metro station.</p>
+</div>
+
+<button class="accordion">The show I want is sold out, but I found someone selling tickets online. Can I be sure they're legit?</button>
+<div class="panel">
+  <p>1) We do not work with any ticket re-sale sites.</br>
+
+2) We have a will call only system, so anyone promising to send you tickets (by mail or e-mail) is likely a scammer. There are no tickets, PDF or otherwise, to send you.</br>
+
+3) If a seller wants someone else to pick up their ticket at will call, the seller must call the District and verify their identity before giving us the name of the person picking up the ticket (i.e. you). If you're buying a ticket second-hand, it's up to you to verify that the seller has done this. If we don't have your name in advance from the person selling the ticket, we can deny you admission to the show.</br>
+
+4) If we are aware that tickets are being "re-sold" at more than their original price, we will not facilitate such transfers.</p>
+</div>
+
+<button class="accordion">What's your policy on refunds / exchanges / cancellations?</button>
+<div class="panel">
+  <p>We operate like most entertainment venues: All sales are final. (This goes for both comedy events AND comedy workshops.) Whether you purchase tickets online, over the phone, at the box office, with a credit card or with cash, there are no refunds, exchanges or cancellations. The exception to this rule is when a performance is canceled. If the show or class you bought tickets for no longer exists, you will get your money back.</p>
+</div>
+
+<button class="accordion">How long are shows?</button>
+<div class="panel">
+  <p>Most stand-up comedy shows last 90 - 120 minutes. The show length really depends on the audience.</p>
+</div>
+
+<button class="accordion">What are your box office hours?</button>
+<div class="panel">
+  <p>You can buy tickets to any District Comedy show through this website, at any time of day. But if you want to buy your tickets (or a gift card, etc.) in person or over the phone, here are the times you can generally reach us. (All times subject to change, based on programming at the Improv.)</br>
+</br>
+
+Monday: Closed</br>
+Tuesday through Friday: 10 a.m. - 9 p.m. on days when there are shows. 10 a.m. - 5 p.m. on days when there are no scheduled shows.</br>
+Saturday and Sunday: Noon to 9 p.m. Please note that the box office may be closed on Sunday if no evening show is scheduled.</p>
+</div>
+
+<button class="accordion">What's the deal with the two-item minimum?</button>
+<div class="panel">
+  <p>The District (like most comedy clubs) requires that you purchase two items from the menu when you come to see a show. This can be any combination of food, drinks, coffee or dessert. All early shows offer dinner entrees, appetizers and drinks. Late shows offer a more-limited food menu and drinks.</p>
+</div>
+
+<button class="accordion">What's the earliest I can get in to the club?</button>
+<div class="panel">
+<p>The will call window and the showroom usually open one hour before the start of the first show of the night. (So if the early show is at 7, doors open at 6.) If you show up before then, you'll be waiting in line. Doors usually open 15 minutes before any late show.</p>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/districtcomedy?primary_color=43cfec" style="min-width:320px;height:630px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 </body>
 </html>
+
+
+
